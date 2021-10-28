@@ -1,0 +1,33 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "indent": "off",
+    "quotes": ["error", "double"],
+    "semi": ["error", "never"],
+    "no-console": "warn",
+    "react/display-name": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/self-closing-comp": ["warn", { "component": true, "html": false }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
